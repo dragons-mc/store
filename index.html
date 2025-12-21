@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+ <head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1" />
+   <title>Dragons Hub | Home</title>
+   <link rel="stylesheet" href="css/homestyle.css" />
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+   <link rel="icon" type="image/png" href="src/icons/icon.png" />
+ </head>
+
+ <body>
+   <header class="topbar">
+     <div class="brand">
+       <a href="#" class="logo" id="logo" aria-label="Home" title="Home">
+         <img src="src/images/logo.png" alt="Dragons Hub Logo">
+       </a>
+
+
+       <div>
+         <div class="site-title">Dragons Hub</div>
+         <div class="small" style="color:var(--muted);font-size:12px">مرحبا بك في متجرنا</div>
+       </div>
+     </div>
+
+     <nav class="nav" aria-label="روابط الموقع">
+       <a href="#products">المنتجات</a>
+       <a href="#contact">اتصل بنا</a>
+     </nav>
+   </header>
+
+   <video autoplay muted loop playsinline class="bg-video">
+     <source src="src/videos/bg-vid.mp4" type="video/mp4">
+   </video>
+
+   <main class="container">
+     <section class="hero" aria-label="معلومات السيرفر">
+       <div class="home-logo" aria-hidden="false"> 
+         <img src="src/images/homelogo.png" alt="Dragons Hub">
+       </div>
+       <article class="card" id="card-status" role="region" aria-labelledby="status-title">
+         <span class="muted"></span>
+
+         <div class="status" style="margin-top:12px;">
+           <div id="status-dot" class="dot offline" aria-hidden="true"></div>
+           <div>
+             <div class="small">الحالة</div>
+             <div id="status-text" class="big-number">غير متصل</div>
+           </div>
+         </div>
+
+         <div style="margin-top:14px;">
+           <div class="small">عدد اللاعبين</div>
+           <div id="players" class="big-number">0</div>
+         </div>
+       </article>
+
+       <article class="card" id="card-info" role="region" aria-labelledby="info-title"> 
+         <div style="margin-top:12px;">
+           <div class="small">IP</div>
+           <div id="server-ip" class="big-number">dragons.xyz</div>
+         </div>
+
+         <div style="margin-top:12px;">
+           <div class="small">Port</div>
+           <div id="server-port" class="big-number">25565</div>
+         </div>
+       </article>
+     </section>
+   </main>
+
+
+   <script src="scripts/home.js"></script>
+ </body>
+</html>
